@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ACoreX.Configurations
+namespace ACoreX.Authentication.JWT
 {
     public class Class1
     {

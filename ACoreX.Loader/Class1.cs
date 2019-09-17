@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ACoreX.Authentication.Core
+namespace ACoreX.Loader
 {
     public class Class1
     {

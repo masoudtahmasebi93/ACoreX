@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ACoreX.Data.Abstractions
+namespace Bases
 {
     public class Class1
     {

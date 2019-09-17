@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ACoreX.Injector.Abstraction
+namespace BaseLogger
 {
     public class Class1
     {

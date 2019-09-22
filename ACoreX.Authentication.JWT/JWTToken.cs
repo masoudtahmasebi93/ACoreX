@@ -1,4 +1,9 @@
 ﻿using ACoreX.Authentication.Abstractions;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
@@ -131,7 +136,6 @@ namespace ACoreX.Authentication.JWT
             return result;
 
         }
-
 
     }
 }

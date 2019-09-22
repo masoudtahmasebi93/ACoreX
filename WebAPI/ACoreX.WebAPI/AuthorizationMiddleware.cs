@@ -1,4 +1,8 @@
-﻿using ACoreX.Core.Autentication;
+﻿using ACoreX.Authentication.Abstractions;
+using ACoreX.Injector.Abstractions;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -33,7 +37,7 @@ namespace ACoreX.WebAPI
             //_container.Services.AddJWTAuth();
         }
 
-        public async Task InvokeAsync(HttpContent context)
+        public async Task InvokeAsync(HttpContext context)
         {
             // Sign in user if this auth cookie doesn't exist
 

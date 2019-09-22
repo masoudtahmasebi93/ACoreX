@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ACoreX.Authentication.JWT\ACoreX.Authentication.JWT.csproj" />
+    <ProjectReference Include="..\ACoreX.Loader\ACoreX.Loader.csproj" />
+    <ProjectReference Include="..\Authentication\ACoreX.Authentication.Core\ACoreX.Authentication.Core.csproj" />
+    <ProjectReference Include="..\BaseLogger\ACoreX.Logger.Base.csproj" />
+    <ProjectReference Include="..\Data\ACoreX.Data.Dapper\ACoreX.Data.Dapper.csproj" />
+    <ProjectReference Include="..\Injector\ACoreX.Injector.Abstraction\ACoreX.Injector.Abstractions.csproj" />
+    <ProjectReference Include="..\Injector\ACoreX.Injector.Core\ACoreX.Injector.Core.csproj" />
+  </ItemGroup>
+
+</Project>

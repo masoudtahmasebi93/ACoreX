@@ -1,9 +1,9 @@
-﻿using ACoreX.Core.BaseExtensions;
+﻿
+using ACoreX.Extensions.Base.Abstractions;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace ACoreX.Infrastructure.BaseExtensions
+namespace ACoreX.WebAPI
 {
     public class CustomException : Exception
     {
@@ -18,9 +18,9 @@ namespace ACoreX.Infrastructure.BaseExtensions
                             string refLink = "") :
             base(message)
         {
-            this.Errors = errors;
-            this.Code = code;
-            this.ReferenceDocumentLink = refLink;
+            Errors = errors;
+            Code = code;
+            ReferenceDocumentLink = refLink;
         }
 
         public CustomException(Exception ex, int? code = null) : base(ex.Message)

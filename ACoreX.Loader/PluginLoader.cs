@@ -1,4 +1,8 @@
-﻿using System;
+﻿using ACoreX.Injector.Abstractions;
+using ACoreX.Plugin;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

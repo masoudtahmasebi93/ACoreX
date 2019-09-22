@@ -1,6 +1,14 @@
 ﻿
 
 
+using ACoreX.Authentication.Abstractions;
+using ACoreX.Injector.Abstractions;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+
 namespace ACoreX.Authentication.Core
 {
 
@@ -23,9 +31,10 @@ namespace ACoreX.Authentication.Core
 
         public async void OnAuthorization(AuthorizationFilterContext context)
         {
-            Microsoft.AspNetCore.Http.IHeaderDictionary headers = context.HttpContext.Request.Headers;
-            Microsoft.AspNetCore.Http.HttpRequest request = context.HttpContext.Request;
+            IHeaderDictionary headers = context.HttpContext.Request.Headers;
+            HttpRequest request = context.HttpContext.Request;
             string tokenStr = headers["Authorization"].ToString().Replace("Bearer ", "");
+            //string tokenStr = "headers[";
 
             IAuthHandler authHandler = _builder.Create<IAuthHandler>();
 

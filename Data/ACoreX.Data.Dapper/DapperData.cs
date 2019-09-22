@@ -1,11 +1,11 @@
-﻿using ACoreX.Data;
+﻿using ACoreX.Data.Abstractions;
 using Dapper;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace ACoreX.Dapper
+namespace ACoreX.Data.Dapper
 {
     public class DapperData : IData
     {
@@ -25,7 +25,7 @@ namespace ACoreX.Dapper
         //    }
         //}
 
-        public void Execute(string sQuery,params DBParam[] parameters)
+        public void Execute(string sQuery, params DBParam[] parameters)
         {
             using (IDbConnection connection = Connection)
             {
@@ -42,7 +42,7 @@ namespace ACoreX.Dapper
         //    }
         //}
 
-        public Task ExecuteAsync(string sQuery,params DBParam[] parameters)
+        public Task ExecuteAsync(string sQuery, params DBParam[] parameters)
         {
             using (IDbConnection connection = Connection)
             {
@@ -61,7 +61,7 @@ namespace ACoreX.Dapper
         //    }
         //}
 
-        public IEnumerable<dynamic> Query(string sQuery,params DBParam[] parameters)
+        public IEnumerable<dynamic> Query(string sQuery, params DBParam[] parameters)
         {
             using (IDbConnection connection = Connection)
             {
@@ -80,7 +80,7 @@ namespace ACoreX.Dapper
         //    }
         //}
 
-        public Task<IEnumerable<dynamic>> QueryAsync(string sQuery,params DBParam[] parameters)
+        public Task<IEnumerable<dynamic>> QueryAsync(string sQuery, params DBParam[] parameters)
         {
             using (IDbConnection connection = Connection)
             {

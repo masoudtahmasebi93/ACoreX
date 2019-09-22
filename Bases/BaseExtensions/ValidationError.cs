@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿
 
-namespace ACoreX.Core.BaseExtensions
+using Newtonsoft.Json;
+
+namespace ACoreX.Extensions.Base.Abstractions
 {
     public class ValidationError
     {

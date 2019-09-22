@@ -1,5 +1,8 @@
 ﻿
-namespace ACoreX.Extensions.Base.Core
+using ACoreX.WebAPI;
+using Microsoft.AspNetCore.Builder;
+
+namespace ACoreX.WebAPI
 {
 
     public static class ApiResponseMiddlewareExtension

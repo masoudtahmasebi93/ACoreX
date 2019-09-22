@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace ACoreX.Core.BaseExtensions
+namespace ACoreX.Extensions.Base.Abstractions
 {
     public static class TypeExtensions
     {

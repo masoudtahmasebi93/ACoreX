@@ -55,15 +55,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.WebAPI", "WebAPI\ACo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSGenerator", "Utilities\TS\Generator\TSGenerator\TSGenerator.csproj", "{EE6C733C-0EC7-4689-973F-553001713B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Extensions.Base.Abstractions", "Bases\ACoreX.Extensions.Base.Abstractions.csproj", "{D3693B50-6D1F-4341-9287-C7D5ADB240D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Extensions.Base.Abstractions", "Bases\ACoreX.Extensions.Base.Abstractions.csproj", "{D3693B50-6D1F-4341-9287-C7D5ADB240D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Logger.Base", "BaseLogger\ACoreX.Logger.Base.csproj", "{3D7E7C8E-4A05-4C27-B636-20196BDDC7E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Logger.Base", "BaseLogger\ACoreX.Logger.Base.csproj", "{3D7E7C8E-4A05-4C27-B636-20196BDDC7E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Extensions.Base.Core", "ACoreX.Extensions.Base.Core\ACoreX.Extensions.Base.Core.csproj", "{304E7E0A-81BB-48AD-A1CC-65D821AFB9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Extensions.Base.Core", "ACoreX.Extensions.Base.Core\ACoreX.Extensions.Base.Core.csproj", "{304E7E0A-81BB-48AD-A1CC-65D821AFB9A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Loader", "ACoreX.Loader\ACoreX.Loader.csproj", "{66389196-D459-4D2F-AC8D-8D6D83F520C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Loader", "ACoreX.Loader\ACoreX.Loader.csproj", "{66389196-D459-4D2F-AC8D-8D6D83F520C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Authentication.JWT", "ACoreX.Authentication.JWT\ACoreX.Authentication.JWT.csproj", "{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Authentication.JWT", "ACoreX.Authentication.JWT\ACoreX.Authentication.JWT.csproj", "{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.View.Status", "ACoreX.View.Status\ACoreX.View.Status.csproj", "{CD292DB5-F25C-4EA8-83EA-36493B53325D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACoreX.Plugin", "ACoreX.Plugin\ACoreX.Plugin.csproj", "{297AEE87-A807-4928-983E-223ECA36F1F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +143,14 @@ Global
 		{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD292DB5-F25C-4EA8-83EA-36493B53325D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD292DB5-F25C-4EA8-83EA-36493B53325D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD292DB5-F25C-4EA8-83EA-36493B53325D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD292DB5-F25C-4EA8-83EA-36493B53325D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297AEE87-A807-4928-983E-223ECA36F1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297AEE87-A807-4928-983E-223ECA36F1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297AEE87-A807-4928-983E-223ECA36F1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297AEE87-A807-4928-983E-223ECA36F1F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +177,7 @@ Global
 		{304E7E0A-81BB-48AD-A1CC-65D821AFB9A3} = {413DBA7C-A70B-43BB-810D-31B083CD7460}
 		{66389196-D459-4D2F-AC8D-8D6D83F520C6} = {2F457E89-960A-4F4C-8E5B-1EB4A0D91ABE}
 		{77FB9EBD-8BC5-4C80-9BCF-4C0D51DF8624} = {43355148-AAA3-4BBE-A5AC-C180ACB52415}
+		{297AEE87-A807-4928-983E-223ECA36F1F0} = {6BC1618E-5F0F-4D5A-A275-854E7D79E6E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95BF9AF2-B3CE-40DE-A48B-1BFD960CC0E8}

@@ -1,4 +1,8 @@
 ﻿
+
+using ACoreX.Extensions.Base.Core;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Net;
@@ -62,7 +66,7 @@ namespace ACoreX.WebAPI
         {
             ApiError apiError = null;
             ApiResponse ApiResponse = null;
-            int code = (int)HttpStatusCode.InternalServerError; ;
+            int code = (int)HttpStatusCode.InternalServerError;
 
             if (exception is CustomException)
             {
@@ -75,7 +79,7 @@ namespace ACoreX.WebAPI
                 };
                 context.Response.StatusCode = 500;
             }
-            else if (exception is UnauthorizedAccessException)
+            if (exception is UnauthorizedAccessException)
             {
                 apiError = new ApiError("Unauthorized Access");
                 code = (int)HttpStatusCode.Unauthorized;

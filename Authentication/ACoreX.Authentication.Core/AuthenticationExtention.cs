@@ -1,6 +1,7 @@
 ﻿
 
 using ACoreX.Authentication.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ACoreX.Authentication.Core
 {

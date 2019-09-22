@@ -1,5 +1,4 @@
-﻿
-using ACoreX.Core.BaseExtensions;
+﻿using ACoreX.Extensions.Base.Abstractions;
 using System.Collections.Generic;
 
 namespace ACoreX.WebAPI

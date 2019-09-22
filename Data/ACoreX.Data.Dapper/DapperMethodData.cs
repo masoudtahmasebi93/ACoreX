@@ -1,12 +1,11 @@
-﻿using ACoreX.Data;
-using Dapper;
+﻿using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace ACoreX.Dapper
+namespace ACoreX.Data.Dapper
 {
     public class DapperMethodData 
     {

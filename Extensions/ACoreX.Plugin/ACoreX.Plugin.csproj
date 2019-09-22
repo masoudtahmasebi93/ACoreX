@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Injector\ACoreX.Injector.Abstraction\ACoreX.Injector.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Injector\ACoreX.Injector.Abstraction\ACoreX.Injector.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

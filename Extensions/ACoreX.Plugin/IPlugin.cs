@@ -1,4 +1,5 @@
-﻿using ACoreX.Injector.Abstractions;
+﻿
+using ACoreX.Injector.Abstractions;
 using System;
 
 namespace ACoreX.Plugin

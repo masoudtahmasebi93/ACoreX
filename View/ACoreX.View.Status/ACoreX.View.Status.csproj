@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ACoreX.Authentication.JWT\ACoreX.Authentication.JWT.csproj" />
-    <ProjectReference Include="..\ACoreX.Loader\ACoreX.Loader.csproj" />
+    <ProjectReference Include="..\ACoreX.Loader\ACoreX.AssemblyLoader.csproj" />
     <ProjectReference Include="..\Authentication\ACoreX.Authentication.Core\ACoreX.Authentication.Core.csproj" />
     <ProjectReference Include="..\BaseLogger\ACoreX.Logger.Base.csproj" />
     <ProjectReference Include="..\Data\ACoreX.Data.Dapper\ACoreX.Data.Dapper.csproj" />

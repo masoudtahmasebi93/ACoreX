@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 
-namespace ACoreX.Extensions.Base.Core
+namespace ACoreX.Extensions.Types
 {
     public static class StringExtensions
     {

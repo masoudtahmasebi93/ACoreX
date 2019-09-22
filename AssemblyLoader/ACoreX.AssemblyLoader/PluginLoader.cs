@@ -9,7 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
 
-namespace ACoreX.Loader
+namespace ACoreX.AssemblyLoader
 {
     public static class ApiPluginLoaderMiddlewareExtension
     {

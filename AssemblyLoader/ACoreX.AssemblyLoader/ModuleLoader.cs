@@ -1,11 +1,8 @@
-﻿using ACoreX.Extensions.Base.Abstractions;
+﻿using ACoreX.Extensions.Types;
 using ACoreX.Injector.Abstractions;
 using ACoreX.WebAPI;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.Mvc.Controllers;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.Emit;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -16,7 +13,7 @@ using System.Runtime.Loader;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACoreX.Loader
+namespace ACoreX.AssemblyLoader
 {
     public static class ApiModuleLoaderMiddlewareExtension
     {

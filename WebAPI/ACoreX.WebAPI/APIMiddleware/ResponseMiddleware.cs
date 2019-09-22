@@ -1,6 +1,6 @@
 ﻿
 
-using ACoreX.Extensions.Base.Core;
+using ACoreX.Extensions.Types;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;

@@ -1,5 +1,6 @@
 ﻿
-using ACoreX.Extensions.Base.Abstractions;
+
+using ACoreX.Extensions.Types;
 using System;
 using System.Collections.Generic;
 

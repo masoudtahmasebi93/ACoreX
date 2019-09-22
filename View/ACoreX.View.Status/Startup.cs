@@ -5,7 +5,7 @@ using ACoreX.Data.Abstractions;
 using ACoreX.Data.Dapper;
 using ACoreX.Injector.Abstractions;
 using ACoreX.Injector.Core;
-using ACoreX.Loader;
+using ACoreX.AssemblyLoader;
 using ACoreX.Logger.Base;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

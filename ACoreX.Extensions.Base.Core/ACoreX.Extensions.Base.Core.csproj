@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bases\ACoreX.Extensions.Base.Abstractions.csproj" />
-    <ProjectReference Include="..\WebAPI\ACoreX.WebAPI\ACoreX.WebAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

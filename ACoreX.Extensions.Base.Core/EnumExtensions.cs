@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace ACoreX.WebAPI
+namespace ACoreX.Extensions.Base.Core
 {
     public static class EnumExtensions
     {

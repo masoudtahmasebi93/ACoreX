@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.Emit;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -84,9 +83,10 @@ namespace ACoreX.AssemblyLoader
                     //sb.AppendLine("using ACoreX.Core;");
                     //sb.AppendLine("using ACoreX.Core.Injector;");
                     sb.AppendLine("using Microsoft.AspNetCore.Mvc;");
+                    sb.AppendLine("using ACoreX.Authentication.Core;");
                     //sb.AppendLine("using CRM.Module.Contexts;");
                     //sb.AppendLine("using Microsoft.AspNetCore.Authorization;");
-                    sb.AppendLine("using ACoreX.Infrastructure.Authentication;");
+                    //sb.AppendLine("using ACoreX.Infrastructure.Authentication;");
                     sb.AppendLine("using System.Threading.Tasks;");
                     //sb.AppendLine("using ACoreX.Core.WepApi;");
                     //sb.AppendLine("using ACoreX.Core.Authentication;");
@@ -194,7 +194,7 @@ namespace ACoreX.AssemblyLoader
 
                     using (MemoryStream ms = new MemoryStream())
                     {
-                        EmitResult result = compilation.Emit(ms);
+                        Microsoft.CodeAnalysis.Emit.EmitResult result = compilation.Emit(ms);
                         if (!result.Success)
                         {
                             IEnumerable<Diagnostic> failures = result.Diagnostics.Where(diagnostic =>

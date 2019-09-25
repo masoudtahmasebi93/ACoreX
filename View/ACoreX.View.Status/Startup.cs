@@ -34,8 +34,8 @@ namespace ACoreX.View.Status
              //.AddLogger<MyCustomLogger>(false)
              .AddMvc()
              .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-             .LoadModules(builder, "/app/lib")
-            .LoadPlugins(builder, "/app/lib")
+             .LoadModules(builder, "D:/app/lib/")
+            .LoadPlugins(builder, "D:/app/lib/")
              .AddControllers();
             builder.AddSingleton<IAuthHandler, MyAuthClass>();
             builder.AddSingleton<IData, DapperData>();

@@ -6,17 +6,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="1.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ACoreX.Loader\ACoreX.AssemblyLoader.csproj" />
-    <ProjectReference Include="..\Authentication\ACoreX.Authentication.Core\ACoreX.Authentication.Core.csproj" />
-    <ProjectReference Include="..\BaseLogger\ACoreX.Logger.Base.csproj" />
-    <ProjectReference Include="..\Data\ACoreX.Data.Dapper\ACoreX.Data.Dapper.csproj" />
-    <ProjectReference Include="..\Injector\ACoreX.Injector.Abstraction\ACoreX.Injector.Abstractions.csproj" />
-    <ProjectReference Include="..\Injector\ACoreX.Injector.Core\ACoreX.Injector.Core.csproj" />
+    <ProjectReference Include="..\..\AssemblyLoader\ACoreX.AssemblyLoader\ACoreX.AssemblyLoader.csproj" />
+    <ProjectReference Include="..\..\Authentication\ACoreX.Authentication.Abstraction\ACoreX.Authentication.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Authentication\ACoreX.Authentication.Core\ACoreX.Authentication.Core.csproj" />
+    <ProjectReference Include="..\..\Authentication\ACoreX.Authentication.JWT\ACoreX.Authentication.JWT.csproj" />
+    <ProjectReference Include="..\..\BaseLogger\ACoreX.Logger.Base.csproj" />
+    <ProjectReference Include="..\..\Data\ACoreX.Data.Core\ACoreX.Data.Core.csproj" />
+    <ProjectReference Include="..\..\Data\ACoreX.Data.Dapper\ACoreX.Data.Dapper.csproj" />
+    <ProjectReference Include="..\..\Injector\ACoreX.Injector.Abstraction\ACoreX.Injector.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Injector\ACoreX.Injector.Core\ACoreX.Injector.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

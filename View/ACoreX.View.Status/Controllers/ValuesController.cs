@@ -8,7 +8,7 @@ namespace ACoreX.View.Status.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class StatusController : ControllerBase
     {
         // GET api/values
         [HttpGet]

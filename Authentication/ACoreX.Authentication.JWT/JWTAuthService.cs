@@ -1,10 +1,8 @@
 ﻿using ACoreX.Authentication.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Text;
-using ACoreX.Authentication.Core;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace ACoreX.Authentication.JWT
 {
@@ -16,7 +14,7 @@ namespace ACoreX.Authentication.JWT
         {
             byte[] key = Encoding.ASCII.GetBytes(stringKey);
             service.AddSingleton<IToken, JWTToken>();
-            
+
 
             service.AddAuthentication(x =>
             {

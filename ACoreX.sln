@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACoreX.Plugin", "Extensions
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{A49E38A7-7B44-458A-9F6E-0CB7B38BFC6D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart.Core", "..\..\repos\Smart.Core\Smart.Core\Smart.Core.csproj", "{3B68FCF4-CD26-407B-8084-674A62905340}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,10 @@ Global
 		{897E3D23-591D-490C-9173-D6DDC4EF5EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897E3D23-591D-490C-9173-D6DDC4EF5EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{897E3D23-591D-490C-9173-D6DDC4EF5EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B68FCF4-CD26-407B-8084-674A62905340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B68FCF4-CD26-407B-8084-674A62905340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B68FCF4-CD26-407B-8084-674A62905340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B68FCF4-CD26-407B-8084-674A62905340}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +170,7 @@ Global
 		{FB6E5A77-7E1A-4911-87AA-CB911B077A45} = {6BC1618E-5F0F-4D5A-A275-854E7D79E6E9}
 		{75975D07-5127-47A2-9D7D-C4E2ADE2416F} = {2F457E89-960A-4F4C-8E5B-1EB4A0D91ABE}
 		{897E3D23-591D-490C-9173-D6DDC4EF5EED} = {6BC1618E-5F0F-4D5A-A275-854E7D79E6E9}
+		{3B68FCF4-CD26-407B-8084-674A62905340} = {A49E38A7-7B44-458A-9F6E-0CB7B38BFC6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95BF9AF2-B3CE-40DE-A48B-1BFD960CC0E8}

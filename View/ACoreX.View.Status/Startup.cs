@@ -35,7 +35,7 @@ namespace ACoreX.View.Status
              .AddMvc()
              .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
              .LoadModules(builder, "D:/app/lib/")
-            .LoadPlugins(builder, "D:/app/lib/")
+            //.LoadPlugins(builder, "D:/app/lib/")
              .AddControllers();
             builder.AddSingleton<IAuthHandler, MyAuthClass>();
             builder.AddSingleton<IData, DapperData>();
@@ -56,12 +56,11 @@ namespace ACoreX.View.Status
     }
     public class MyAuthClass : IAuthHandler
     {
-        private ILogger _logger = null;
+
         private IData _Idata;
-        public MyAuthClass(ILogger logger, IData data)
+        public MyAuthClass( IData data)
         {
-            _logger = logger;
-            _logger.WriteMessage("hi");
+            
             _Idata = data;
         }
 

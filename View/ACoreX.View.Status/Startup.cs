@@ -54,6 +54,17 @@ namespace ACoreX.View.Status
             app.UseMvc();
         }
     }
+    public class Contact
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Subregion { get; set; }
+        public string PostalCode { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+    }
     public class MyAuthClass : IAuthHandler
     {
 
@@ -70,7 +81,7 @@ namespace ACoreX.View.Status
             System.Security.Claims.ClaimsPrincipal checkTheToken = token.ValidateToken(token.Value);
             string userid = token.GetValue("Id");
 
-            //_Idata.Read<Contact>();
+            _Idata.Query("SELECT *  FROM [AcoreXTest].[dbo].[Contacts]");
             return checkToken;
         }
     }
